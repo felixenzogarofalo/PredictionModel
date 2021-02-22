@@ -1,10 +1,8 @@
 from model.utils.data_engineering import DataEngineering
 from model.prediction_model.regression import Regression
 
-# In first place we need to load the data
-csv_path = "data/area_01.csv"
-
 # Create an instance for DataEngineering and load data from CSV
+csv_path = "data/area_01.csv"
 data_e = DataEngineering()
 data_e.load_data(csv_path)
 data_e.clean_data()
