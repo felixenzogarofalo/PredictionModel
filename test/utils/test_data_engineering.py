@@ -5,8 +5,7 @@ from model.utils.data_engineering import DataEngineering
 class TestDataEngineering(unittest.TestCase):
     def __init__(self, *args, **kwargs):
         super().__init__(*args, **kwargs)
-        self.csv_path = "C:/Users/User/Documents/Programación/Proyectos/" \
-                        + "PredictionModel/data/area_01.csv"
+        self.csv_path = "data/area_01.csv"
 
     def test_load_data(self):
         data_engineering = DataEngineering()
